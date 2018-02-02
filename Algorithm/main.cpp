@@ -33,7 +33,7 @@ vector<int> getNext(string p) {
             ++k; ++j;
             next[j] = k;
         } else {
-            k = next[k];
+            k = next[k]; // 归-1
         }
         printVect(next);
         cout << k << " " << j << endl;

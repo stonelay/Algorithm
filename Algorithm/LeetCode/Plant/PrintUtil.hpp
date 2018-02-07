@@ -14,6 +14,6 @@
 
 using namespace std;
 
-void printVect(vector<int> vec);
+void printVect(vector<string> vec);
 
 #endif /* PrintUtil_hpp */

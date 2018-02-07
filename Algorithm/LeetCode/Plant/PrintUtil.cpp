@@ -11,8 +11,8 @@
 using namespace std;
 
 #pragma mark - Print Util
-void printVect(vector<int> vec) {
-    vector<int>::iterator it;
+void printVect(vector<string> vec) {
+    vector<string>::iterator it;
     for(it = vec.begin();it != vec.end();it++) {
         cout<< *it;
         cout<< " ";

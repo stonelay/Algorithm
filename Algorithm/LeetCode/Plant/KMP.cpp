@@ -35,7 +35,6 @@ vector<int> getNext(string p) {
         } else {
             k = next[k]; // 归-1
         }
-        printVect(next);
         cout << k << " " << j << endl;
     }
     return next;

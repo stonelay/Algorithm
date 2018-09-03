@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		480E6E9720299C7E00D39CC8 /* LeetCode093.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 480E6E9520299C7E00D39CC8 /* LeetCode093.cpp */; };
 		480E6E9A202AA39500D39CC8 /* LeetCode001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 480E6E98202AA39500D39CC8 /* LeetCode001.cpp */; };
+		48596A77213D43F900D16BED /* SortPractice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596A75213D43F900D16BED /* SortPractice.cpp */; };
+		48596A7A213D442B00D16BED /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596A78213D442B00D16BED /* QuickSort.cpp */; };
+		48596A7D213D445100D16BED /* SortUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596A7B213D445100D16BED /* SortUtils.cpp */; };
 		488EA00D201F2C180018F481 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488EA00C201F2C180018F481 /* main.cpp */; };
 		48F057AA2028496A0097648F /* BinSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F057A82028496A0097648F /* BinSearch.cpp */; };
 		48F057AD20284C1C0097648F /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F057AB20284C1C0097648F /* KMP.cpp */; };
@@ -38,6 +41,12 @@
 		480E6E9620299C7E00D39CC8 /* LeetCode093.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode093.hpp; sourceTree = "<group>"; };
 		480E6E98202AA39500D39CC8 /* LeetCode001.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode001.cpp; sourceTree = "<group>"; };
 		480E6E99202AA39500D39CC8 /* LeetCode001.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode001.hpp; sourceTree = "<group>"; };
+		48596A75213D43F900D16BED /* SortPractice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortPractice.cpp; sourceTree = "<group>"; };
+		48596A76213D43F900D16BED /* SortPractice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortPractice.hpp; sourceTree = "<group>"; };
+		48596A78213D442B00D16BED /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
+		48596A79213D442B00D16BED /* QuickSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuickSort.hpp; sourceTree = "<group>"; };
+		48596A7B213D445100D16BED /* SortUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortUtils.cpp; sourceTree = "<group>"; };
+		48596A7C213D445100D16BED /* SortUtils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortUtils.hpp; sourceTree = "<group>"; };
 		488EA009201F2C180018F481 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		488EA00C201F2C180018F481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		48F057A82028496A0097648F /* BinSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinSearch.cpp; sourceTree = "<group>"; };
@@ -80,6 +89,19 @@
 			path = "91-100";
 			sourceTree = "<group>";
 		};
+		48596A2321392CF700D16BED /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				48596A75213D43F900D16BED /* SortPractice.cpp */,
+				48596A76213D43F900D16BED /* SortPractice.hpp */,
+				48596A78213D442B00D16BED /* QuickSort.cpp */,
+				48596A79213D442B00D16BED /* QuickSort.hpp */,
+				48596A7B213D445100D16BED /* SortUtils.cpp */,
+				48596A7C213D445100D16BED /* SortUtils.hpp */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
 		488EA000201F2C180018F481 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +130,7 @@
 		48F057B1202852C60097648F /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				48596A2321392CF700D16BED /* Sort */,
 				480E6E9420299C5E00D39CC8 /* 91-100 */,
 				48F057BC202857500097648F /* Plant */,
 				48F057B5202852F20097648F /* 1-10 */,
@@ -209,10 +232,13 @@
 				480E6E9720299C7E00D39CC8 /* LeetCode093.cpp in Sources */,
 				48F057BB202856920097648F /* LeetCode003.cpp in Sources */,
 				48F057AD20284C1C0097648F /* KMP.cpp in Sources */,
+				48596A7A213D442B00D16BED /* QuickSort.cpp in Sources */,
 				48F057C8202954E10097648F /* LeetCode007.cpp in Sources */,
 				48F057B020284C730097648F /* PrintUtil.cpp in Sources */,
+				48596A7D213D445100D16BED /* SortUtils.cpp in Sources */,
 				48F057C520294BB20097648F /* LeetCode006.cpp in Sources */,
 				480E6E9A202AA39500D39CC8 /* LeetCode001.cpp in Sources */,
+				48596A77213D43F900D16BED /* SortPractice.cpp in Sources */,
 				48F057BF202865ED0097648F /* LeetCode004.cpp in Sources */,
 				48F057C22028687F0097648F /* Manacher.cpp in Sources */,
 				48F057B4202852E90097648F /* LeetCode002.cpp in Sources */,

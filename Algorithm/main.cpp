@@ -15,13 +15,17 @@
 #include "LeetCode093.hpp"
 #include <unordered_map>
 
+
 #include "SortPractice.hpp"
+#include "DataStructurePractice.hpp"
+
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    displaySort();
+//    displaySort();
+    displayStructure();
     
     return 0;
 }

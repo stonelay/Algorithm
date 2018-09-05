@@ -8,7 +8,17 @@
 
 #include "SortPractice.hpp"
 #include "QuickSort.hpp"
+#include "BubbleSort.hpp"
+#include "BinaryInsertionSort.hpp"
+#include "InsertionSort.hpp"
+#include "SelectionSort.hpp"
+#include "ShellSort.hpp"
 
 void displaySort() {
     displayQuickSort();
+    displayBubbleSort();
+    displayBinaryInsertionSort();
+    displayInsertionSort();
+    displaySelectionSort();
+    displayShellSort();
 }

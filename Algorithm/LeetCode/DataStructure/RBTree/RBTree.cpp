@@ -556,10 +556,10 @@ void rbtree_delete(RBRoot *root, Node *node) {
     if ( (node->left!=NULL) && (node->right!=NULL) ) {
         // 被删节点的后继节点。(称为"取代节点")
         // 用它来取代"被删节点"的位置，然后再将"被删节点"去掉。
-        Node *replace = node;
-        
-        // 获取后继节点
-        replace = replace->right;
+    
+        // 获取后继节点  这里的 后继节点取的是右孩子的最左节点(也就是说是这颗子树的最小值)
+        // 具体查看 查找二叉树 的删除操作
+        Node *replace = node->right;
         while (replace->left != NULL)
             replace = replace->left;
         

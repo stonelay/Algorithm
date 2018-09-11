@@ -9,8 +9,10 @@
 #include "DataStructurePractice.hpp"
 #include "RBTreeDisplay.hpp"
 #include "DoubleLinkDisplay.hpp"
+#include "BinarySearchTreeDisplay.hpp"
 
 void displayStructure() {
 //    displayRBTree();
-    displayDoubleLink();
+//    displayDoubleLink();
+    displayBSTree();
 }

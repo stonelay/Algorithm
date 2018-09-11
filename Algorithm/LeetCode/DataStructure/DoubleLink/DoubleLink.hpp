@@ -18,19 +18,19 @@
 int createDLink();  // create
 int destroyDLink(); // destroy
 
-extern int isEmptyDLink();  // isEmpty
-extern int sizeDLink();     // size
+int isEmptyDLink();  // isEmpty
+int sizeDLink();     // size
 
-extern void* getNodeDLink(int index);       // get index node
-extern void* getFirstDLink();               // get first node
-extern void* getLastDLink();                // get last node
+void* getNodeDLink(int index);       // get index node
+void* getFirstDLink();               // get first node
+void* getLastDLink();                // get last node
 
-extern int insertDLink(int index, void *pVal);  // insert index node
-extern int insertFirstDLink(void *pVal);        // insert first node
-extern int appendLastDLink(void *pVal);         // append last node
+int insertDLink(int index, void *pVal);  // insert index node
+int insertFirstDLink(void *pVal);        // insert first node
+int appendLastDLink(void *pVal);         // append last node
 
-extern int deleteNodeDLink(int index);          // delete index node
-extern int deleteFirstDLink();                  // delete first node
-extern int deleteLastDLink();                   // delete last node
+int deleteNodeDLink(int index);          // delete index node
+int deleteFirstDLink();                  // delete first node
+int deleteLastDLink();                   // delete last node
 
 #endif /* DoubleLink_hpp */

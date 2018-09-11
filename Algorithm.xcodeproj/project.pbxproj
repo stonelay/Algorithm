@@ -24,6 +24,8 @@
 		48596A9D2140D6AF00D16BED /* HeapSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596A9B2140D6AF00D16BED /* HeapSort.cpp */; };
 		48596AB92146778500D16BED /* DoubleLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596AB72146778500D16BED /* DoubleLink.cpp */; };
 		48596ABC2147A49900D16BED /* DoubleLinkDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596ABA2147A49900D16BED /* DoubleLinkDisplay.cpp */; };
+		48596AC42147B22000D16BED /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596AC22147B22000D16BED /* BinarySearchTree.cpp */; };
+		48596AC72147BF5600D16BED /* BinarySearchTreeDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596AC52147BF5600D16BED /* BinarySearchTreeDisplay.cpp */; };
 		488EA00D201F2C180018F481 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488EA00C201F2C180018F481 /* main.cpp */; };
 		48F057AA2028496A0097648F /* BinSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F057A82028496A0097648F /* BinSearch.cpp */; };
 		48F057AD20284C1C0097648F /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F057AB20284C1C0097648F /* KMP.cpp */; };
@@ -83,6 +85,10 @@
 		48596AB82146778500D16BED /* DoubleLink.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleLink.hpp; sourceTree = "<group>"; };
 		48596ABA2147A49900D16BED /* DoubleLinkDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkDisplay.cpp; sourceTree = "<group>"; };
 		48596ABB2147A49900D16BED /* DoubleLinkDisplay.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkDisplay.hpp; sourceTree = "<group>"; };
+		48596AC22147B22000D16BED /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
+		48596AC32147B22000D16BED /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
+		48596AC52147BF5600D16BED /* BinarySearchTreeDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTreeDisplay.cpp; sourceTree = "<group>"; };
+		48596AC62147BF5600D16BED /* BinarySearchTreeDisplay.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTreeDisplay.hpp; sourceTree = "<group>"; };
 		488EA009201F2C180018F481 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		488EA00C201F2C180018F481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		48F057A82028496A0097648F /* BinSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinSearch.cpp; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 		48596A90213FB92F00D16BED /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				48596AC12147B20500D16BED /* BinarySearchTree */,
 				48596AB62146775700D16BED /* DoubleLink */,
 				48596A94213FBBC300D16BED /* RBTree */,
 				48596A95213FCD9400D16BED /* DataStructurePractice.cpp */,
@@ -183,6 +190,17 @@
 				48596ABB2147A49900D16BED /* DoubleLinkDisplay.hpp */,
 			);
 			path = DoubleLink;
+			sourceTree = "<group>";
+		};
+		48596AC12147B20500D16BED /* BinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+				48596AC22147B22000D16BED /* BinarySearchTree.cpp */,
+				48596AC32147B22000D16BED /* BinarySearchTree.hpp */,
+				48596AC52147BF5600D16BED /* BinarySearchTreeDisplay.cpp */,
+				48596AC62147BF5600D16BED /* BinarySearchTreeDisplay.hpp */,
+			);
+			path = BinarySearchTree;
 			sourceTree = "<group>";
 		};
 		488EA000201F2C180018F481 = {
@@ -313,10 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48596AC42147B22000D16BED /* BinarySearchTree.cpp in Sources */,
 				48596A8C213E399200D16BED /* SelectionSort.cpp in Sources */,
 				480E6E9720299C7E00D39CC8 /* LeetCode093.cpp in Sources */,
 				48596A83213E35DB00D16BED /* BinaryInsertionSort.cpp in Sources */,
 				48F057BB202856920097648F /* LeetCode003.cpp in Sources */,
+				48596AC72147BF5600D16BED /* BinarySearchTreeDisplay.cpp in Sources */,
 				48596A8F213E3A8F00D16BED /* ShellSort.cpp in Sources */,
 				48F057AD20284C1C0097648F /* KMP.cpp in Sources */,
 				48596A80213D471300D16BED /* BubbleSort.cpp in Sources */,

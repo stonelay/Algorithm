@@ -19,18 +19,14 @@ void setBlackRBTreeNode(RBTreeNode *node) { node->color = nodeColorBlack; }
 void setParentRBTreeNode(RBTreeNode *node, RBTreeNode *parant) { node->parent = parant; }
 void setColorRBTreeNode(RBTreeNode *node, NodeColor color) { node->color = color; }
 
-/*
- * 创建红黑树，返回"红黑树的根"
- */
+// create rbtree
 RBRoot* createRBTree() {
     RBRoot *root = (RBRoot *)malloc(sizeof(RBRoot));
     root->node = NULL;
     return root;
 }
 
-/*
- * 前序遍历"红黑树"
- */
+// preorder rbtree
 static void preorder(RBTree tree) {
     if(tree != NULL) {
         printf("%d ", tree->value);
@@ -44,9 +40,7 @@ void preorderRBTree(RBRoot *root) {
         preorder(root->node);
 }
 
-/*
- * 中序遍历"红黑树"
- */
+// inorder rbtree
 static void inorder(RBTree tree) {
     if(tree != NULL) {
         inorder(tree->left);
@@ -60,9 +54,7 @@ void inorderRBTree(RBRoot *root) {
         inorder(root->node);
 }
 
-/*
- * 后序遍历"红黑树"
- */
+// postorder
 static void postorder(RBTree tree) {
     if(tree != NULL) {
         postorder(tree->left);
@@ -668,10 +660,6 @@ void destroyRBTree(RBRoot *root) {
 }
 
 /*
- * 打印"红黑树"
- *
- * tree       -- 红黑树的节点
- * key        -- 节点的键值
  * direction  --  0，表示该节点是根节点;
  *               -1，表示该节点是它的父结点的左孩子;
  *                1，表示该节点是它的父结点的右孩子。

@@ -19,7 +19,7 @@ typedef enum {
 
 typedef int Value;
 
-// rb three node
+// rb tree node
 typedef struct RBTreeNode {
     NodeColor color;                // color
     Value  value;                   // value
@@ -28,7 +28,7 @@ typedef struct RBTreeNode {
     struct RBTreeNode *parent;      // parent child
 } Node, *RBTree;
 
-// rb three root
+// rb tree root
 typedef struct rbRoot {
     Node *node;
 } RBRoot;

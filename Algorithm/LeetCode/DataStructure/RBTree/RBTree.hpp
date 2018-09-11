@@ -11,56 +11,45 @@
 
 #include <stdio.h>
 
-#define RED        0    // 红色节点
-#define BLACK    1    // 黑色节点
+// color
+typedef enum {
+    nodeColorRed    = 0, // red
+    nodeColorBlack  = 1, // black
+} NodeColor;
 
 typedef int Value;
 
-// 红黑树的节点
+// rb three node
 typedef struct RBTreeNode {
-    unsigned char color;            // 颜色(RED 或 BLACK)
+    NodeColor color;                // color
     Value  value;                   // value
-    struct RBTreeNode *left;        // 左孩子
-    struct RBTreeNode *right;       // 右孩子
-    struct RBTreeNode *parent;      // 父结点
+    struct RBTreeNode *left;        // left child
+    struct RBTreeNode *right;       // right child
+    struct RBTreeNode *parent;      // parent child
 } Node, *RBTree;
 
-// 红黑树的根
-typedef struct rb_root {
+// rb three root
+typedef struct rbRoot {
     Node *node;
 } RBRoot;
 
-// 创建红黑树，返回"红黑树的根"！
-RBRoot* create_rbtree();
+RBRoot* createRBTree();                         // create
+void destroyRBTree(RBRoot *root);               // destroy
+int insertRBTree(RBRoot *root, Value value);    // insert
+void deleteRBTree(RBRoot *root, Value value);   // delete
 
-// 销毁红黑树
-void destroy_rbtree(RBRoot *root);
+// traversal
+void preorderRBTree(RBRoot *root);      // preorder
+void inorderRBTree(RBRoot *root);       // inorder
+void postorderRBTree(RBRoot *root);     // postorder
 
-// 将结点插入到红黑树中。插入成功，返回0；失败返回-1。
-int insert_rbtree(RBRoot *root, Value value);
+// search
+int searchRecursionRBTree(RBRoot *root, Value value);       // recursion search
+int searchIterativeRBTree(RBRoot *root, Value value);       // iterative search
 
-// 删除结点(key为节点的值)
-void delete_rbtree(RBRoot *root, Value value);
+int minimumRBTree(RBRoot *root, int *val);  // minimum
+int maximumRBTree(RBRoot *root, int *val);  // maximum
 
-
-// 前序遍历"红黑树"
-void preorder_rbtree(RBRoot *root);
-// 中序遍历"红黑树"
-void inorder_rbtree(RBRoot *root);
-// 后序遍历"红黑树"
-void postorder_rbtree(RBRoot *root);
-
-// (递归实现)查找"红黑树"中键值为value的节点。找到的话，返回0；否则，返回-1。
-int rbtree_search(RBRoot *root, Value value);
-// (非递归实现)查找"红黑树"中键值为value的节点。找到的话，返回0；否则，返回-1。
-int iterative_rbtree_search(RBRoot *root, Value value);
-
-// 返回最小结点的值(将值保存到val中)。找到的话，返回0；否则返回-1。
-int rbtree_minimum(RBRoot *root, int *val);
-// 返回最大结点的值(将值保存到val中)。找到的话，返回0；否则返回-1。
-int rbtree_maximum(RBRoot *root, int *val);
-
-// 打印红黑树
-void print_rbtree(RBRoot *root);
+void printRBTree(RBRoot *root); // print
 
 #endif /* RBTree_hpp */

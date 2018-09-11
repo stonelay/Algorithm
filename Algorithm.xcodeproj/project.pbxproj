@@ -22,6 +22,8 @@
 		48596A97213FCD9400D16BED /* DataStructurePractice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596A95213FCD9400D16BED /* DataStructurePractice.cpp */; };
 		48596A9A213FCE0800D16BED /* RBTreeDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596A98213FCE0800D16BED /* RBTreeDisplay.cpp */; };
 		48596A9D2140D6AF00D16BED /* HeapSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596A9B2140D6AF00D16BED /* HeapSort.cpp */; };
+		48596AB92146778500D16BED /* DoubleLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596AB72146778500D16BED /* DoubleLink.cpp */; };
+		48596ABC2147A49900D16BED /* DoubleLinkDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596ABA2147A49900D16BED /* DoubleLinkDisplay.cpp */; };
 		488EA00D201F2C180018F481 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488EA00C201F2C180018F481 /* main.cpp */; };
 		48F057AA2028496A0097648F /* BinSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F057A82028496A0097648F /* BinSearch.cpp */; };
 		48F057AD20284C1C0097648F /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F057AB20284C1C0097648F /* KMP.cpp */; };
@@ -77,6 +79,10 @@
 		48596A99213FCE0800D16BED /* RBTreeDisplay.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RBTreeDisplay.hpp; sourceTree = "<group>"; };
 		48596A9B2140D6AF00D16BED /* HeapSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSort.cpp; sourceTree = "<group>"; };
 		48596A9C2140D6AF00D16BED /* HeapSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HeapSort.hpp; sourceTree = "<group>"; };
+		48596AB72146778500D16BED /* DoubleLink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLink.cpp; sourceTree = "<group>"; };
+		48596AB82146778500D16BED /* DoubleLink.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleLink.hpp; sourceTree = "<group>"; };
+		48596ABA2147A49900D16BED /* DoubleLinkDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkDisplay.cpp; sourceTree = "<group>"; };
+		48596ABB2147A49900D16BED /* DoubleLinkDisplay.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkDisplay.hpp; sourceTree = "<group>"; };
 		488EA009201F2C180018F481 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		488EA00C201F2C180018F481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		48F057A82028496A0097648F /* BinSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinSearch.cpp; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 		48596A90213FB92F00D16BED /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				48596AB62146775700D16BED /* DoubleLink */,
 				48596A94213FBBC300D16BED /* RBTree */,
 				48596A95213FCD9400D16BED /* DataStructurePractice.cpp */,
 				48596A96213FCD9400D16BED /* DataStructurePractice.hpp */,
@@ -165,6 +172,17 @@
 				48596A99213FCE0800D16BED /* RBTreeDisplay.hpp */,
 			);
 			path = RBTree;
+			sourceTree = "<group>";
+		};
+		48596AB62146775700D16BED /* DoubleLink */ = {
+			isa = PBXGroup;
+			children = (
+				48596AB72146778500D16BED /* DoubleLink.cpp */,
+				48596AB82146778500D16BED /* DoubleLink.hpp */,
+				48596ABA2147A49900D16BED /* DoubleLinkDisplay.cpp */,
+				48596ABB2147A49900D16BED /* DoubleLinkDisplay.hpp */,
+			);
+			path = DoubleLink;
 			sourceTree = "<group>";
 		};
 		488EA000201F2C180018F481 = {
@@ -264,7 +282,7 @@
 		488EA001201F2C180018F481 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Zhanglei;
 				TargetAttributes = {
 					488EA008201F2C180018F481 = {
@@ -313,6 +331,8 @@
 				48F057C520294BB20097648F /* LeetCode006.cpp in Sources */,
 				480E6E9A202AA39500D39CC8 /* LeetCode001.cpp in Sources */,
 				48596A77213D43F900D16BED /* SortPractice.cpp in Sources */,
+				48596AB92146778500D16BED /* DoubleLink.cpp in Sources */,
+				48596ABC2147A49900D16BED /* DoubleLinkDisplay.cpp in Sources */,
 				48F057BF202865ED0097648F /* LeetCode004.cpp in Sources */,
 				48596A93213FB94C00D16BED /* RBTree.cpp in Sources */,
 				48F057C22028687F0097648F /* Manacher.cpp in Sources */,
@@ -340,6 +360,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -347,6 +368,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -395,6 +417,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -402,6 +425,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-void rbtreeDisplay(void);
+void displayRBTree(void);
 
 #endif /* RBTreeDisplay_hpp */

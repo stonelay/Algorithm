@@ -8,7 +8,9 @@
 
 #include "DataStructurePractice.hpp"
 #include "RBTreeDisplay.hpp"
+#include "DoubleLinkDisplay.hpp"
 
 void displayStructure() {
-    rbtreeDisplay();
+//    displayRBTree();
+    displayDoubleLink();
 }

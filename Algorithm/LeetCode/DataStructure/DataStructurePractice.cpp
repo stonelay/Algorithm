@@ -10,9 +10,11 @@
 #include "RBTreeDisplay.hpp"
 #include "DoubleLinkDisplay.hpp"
 #include "BinarySearchTreeDisplay.hpp"
+#include "AVLTreeDisplay.hpp"
 
 void displayStructure() {
 //    displayRBTree();
 //    displayDoubleLink();
-    displayBSTree();
+//    displayBSTree();
+    displayAVLTree();
 }

@@ -20,7 +20,7 @@ typedef struct BSTreeNode{
     struct BSTreeNode *parent;      // parent child
 } Node, *BSTree;
 
-// rb tree root
+// bs tree root
 typedef struct bsRoot {
     Node *node;
 } BSRoot;

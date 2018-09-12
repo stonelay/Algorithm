@@ -26,6 +26,8 @@
 		48596ABC2147A49900D16BED /* DoubleLinkDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596ABA2147A49900D16BED /* DoubleLinkDisplay.cpp */; };
 		48596AC42147B22000D16BED /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596AC22147B22000D16BED /* BinarySearchTree.cpp */; };
 		48596AC72147BF5600D16BED /* BinarySearchTreeDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596AC52147BF5600D16BED /* BinarySearchTreeDisplay.cpp */; };
+		48596ACB2148E93400D16BED /* AVLTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596AC92148E93400D16BED /* AVLTree.cpp */; };
+		48596ACE2148F58C00D16BED /* AVLTreeDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48596ACC2148F58C00D16BED /* AVLTreeDisplay.cpp */; };
 		488EA00D201F2C180018F481 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488EA00C201F2C180018F481 /* main.cpp */; };
 		48F057AA2028496A0097648F /* BinSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F057A82028496A0097648F /* BinSearch.cpp */; };
 		48F057AD20284C1C0097648F /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F057AB20284C1C0097648F /* KMP.cpp */; };
@@ -89,6 +91,10 @@
 		48596AC32147B22000D16BED /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		48596AC52147BF5600D16BED /* BinarySearchTreeDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTreeDisplay.cpp; sourceTree = "<group>"; };
 		48596AC62147BF5600D16BED /* BinarySearchTreeDisplay.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTreeDisplay.hpp; sourceTree = "<group>"; };
+		48596AC92148E93400D16BED /* AVLTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AVLTree.cpp; sourceTree = "<group>"; };
+		48596ACA2148E93400D16BED /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
+		48596ACC2148F58C00D16BED /* AVLTreeDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AVLTreeDisplay.cpp; sourceTree = "<group>"; };
+		48596ACD2148F58C00D16BED /* AVLTreeDisplay.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTreeDisplay.hpp; sourceTree = "<group>"; };
 		488EA009201F2C180018F481 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		488EA00C201F2C180018F481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		48F057A82028496A0097648F /* BinSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinSearch.cpp; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 		48596A90213FB92F00D16BED /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				48596AC82148E92000D16BED /* AVLTree */,
 				48596AC12147B20500D16BED /* BinarySearchTree */,
 				48596AB62146775700D16BED /* DoubleLink */,
 				48596A94213FBBC300D16BED /* RBTree */,
@@ -201,6 +208,17 @@
 				48596AC62147BF5600D16BED /* BinarySearchTreeDisplay.hpp */,
 			);
 			path = BinarySearchTree;
+			sourceTree = "<group>";
+		};
+		48596AC82148E92000D16BED /* AVLTree */ = {
+			isa = PBXGroup;
+			children = (
+				48596AC92148E93400D16BED /* AVLTree.cpp */,
+				48596ACA2148E93400D16BED /* AVLTree.hpp */,
+				48596ACC2148F58C00D16BED /* AVLTreeDisplay.cpp */,
+				48596ACD2148F58C00D16BED /* AVLTreeDisplay.hpp */,
+			);
+			path = AVLTree;
 			sourceTree = "<group>";
 		};
 		488EA000201F2C180018F481 = {
@@ -332,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48596AC42147B22000D16BED /* BinarySearchTree.cpp in Sources */,
+				48596ACE2148F58C00D16BED /* AVLTreeDisplay.cpp in Sources */,
 				48596A8C213E399200D16BED /* SelectionSort.cpp in Sources */,
 				480E6E9720299C7E00D39CC8 /* LeetCode093.cpp in Sources */,
 				48596A83213E35DB00D16BED /* BinaryInsertionSort.cpp in Sources */,
@@ -346,6 +365,7 @@
 				48F057B020284C730097648F /* PrintUtil.cpp in Sources */,
 				48596A7D213D445100D16BED /* SortUtils.cpp in Sources */,
 				48596A9A213FCE0800D16BED /* RBTreeDisplay.cpp in Sources */,
+				48596ACB2148E93400D16BED /* AVLTree.cpp in Sources */,
 				48596A89213E396200D16BED /* MergeSort.cpp in Sources */,
 				48596A9D2140D6AF00D16BED /* HeapSort.cpp in Sources */,
 				48F057C520294BB20097648F /* LeetCode006.cpp in Sources */,
